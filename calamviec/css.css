@@ -1,0 +1,95 @@
+/* Tổng thể trang */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+
+}
+
+/* Kiểu dáng cho phần chọn tuần */
+.week-selector {
+
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.week-selector button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    margin: 0 40px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.week-selector button:hover {
+    background-color: #0056b3;
+}
+
+.week-selector input {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Kiểu dáng cho bảng */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead th {
+    background-color: rgba(124, 147, 181, 0.51);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    text-align: left;
+    border-bottom: 4px solid #000000;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th, td {
+    border: 2px solid #ddd;
+}
+
+th {
+    text-align: center;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 450px) {
+    .week-selector {
+        flex-direction: column;
+    }
+
+    .week-selector button {
+        margin-bottom: 10px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    th {
+        font-size: 16px;
+    }
+
+    td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    table {
+        box-shadow: none;
+    }
+}

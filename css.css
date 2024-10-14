@@ -1,0 +1,42 @@
+/* Styling for the details section */
+.details-section {
+    margin-top: 20px;
+}
+
+.details-section h3 {
+    color: #e74c3c;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.details-content {
+    display: none; /* Ẩn nội dung mặc định */
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.shift-dropdown {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+.shift-dropdown:focus {
+    outline: none;
+    border-color: #2980b9;
+}

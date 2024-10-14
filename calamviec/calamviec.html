@@ -1,0 +1,70 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<html>
+<head>
+    <title>Quản lý Ca Làm Việc</title>
+</head>
+<body>
+
+<h2>Danh sách ca làm việc</h2>
+
+<!-- Giả sử bạn đã lấy danh sách các ca làm việc từ cơ sở dữ liệu -->
+
+
+<h2>Thêm Mới Ca Làm Việc</h2>
+<form action="add_assignment.jsp" method="post">
+    <label for="assignment_id">Mã phân công:</label>
+    <input type="text" id="assignment_id" name="assignment_id" required><br><br>
+
+    <label for="employee_name">Tên nhân viên:</label>
+    <input type="text" id="employee_name" name="employee_name" required><br><br>
+
+    <label for="position">Chức vụ:</label>
+    <input type="text" id="position" name="position" required><br><br>
+
+    <label for="department">Phòng ban:</label>
+    <input type="text" id="department" name="department" required><br><br>
+
+    <label>Chọn ngày và ca làm việc:</label>
+    <table>
+        <tr>
+            <th>Thứ</th>
+            <th>Ca Làm Việc</th>
+        </tr>
+        <tr>
+            <td>Thứ 2</td>
+            <td>
+                <select name="thu2_ca" required>
+                    <option value="Ca hành chính">Ca hành chính</option>
+                    <option value="Ca sáng">Ca sáng</option>
+                    <option value="Ca chiều">Ca chiều</option>
+                    <option value="Ca đêm">Ca đêm</option>
+                </select>
+            </td>
+        </tr>
+        <!-- Thêm các dòng cho các ngày khác tương tự -->
+        <tr>
+            <td>Chủ Nhật</td>
+            <td>
+                <select name="chunhat_ca" required>
+                    <option value="Nghỉ tuần">Nghỉ tuần</option>
+                    <option value="Ca sáng">Ca sáng</option>
+                    <option value="Ca chiều">Ca chiều</option>
+                    <option value="Ca đêm">Ca đêm</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+
+    <label for="start_date">Ngày bắt đầu:</label>
+    <input type="date" id="start_date" name="start_date" required><br><br>
+
+    <label for="end_date">Ngày kết thúc:</label>
+    <input type="date" id="end_date" name="end_date"><br><br>
+
+    <input type="submit" value="Gửi">
+</form>
+
+</body>
+</html>

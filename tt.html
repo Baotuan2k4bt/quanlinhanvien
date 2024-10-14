@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký Ca Làm Việc</title>
+    <style>
+        #shiftTable {
+            display: none; /* Ẩn bảng ca làm việc mặc định */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<form action="your-server-endpoint" method="post">
+    <label for="assignment_id">Mã phân công:</label>
+    <input type="text" id="assignment_id" name="assignment_id" required><br><br>
+
+    <label for="employee_name">Tên nhân viên:</label>
+    <input type="text" id="employee_name" name="employee_name" required><br><br>
+
+    <label for="position">Chức vụ:</label>
+    <input type="text" id="position" name="position" required><br><br>
+
+    <label for="department">Phòng ban:</label>
+    <input type="text" id="department" name="department" required><br><br>
+
+    <label>Chọn ngày và ca làm việc:</label>
+    <button type="button" onclick="toggleShiftTable()">Xem/Ẩn Bảng Ca</button>
+
+    <div id="shiftTable">
+        <table>
+            <tr>
+                <th>Thứ</th>
+                <th>Ca Làm Việc</th>
+            </tr>
+            <tr>
+                <td>Thứ 2</td>
+                <td>
+                    <select name="thu2_ca" required>
+                        <option value="Ca hành chính">Ca hành chính</option>
+                        <option value="Ca sáng">Ca sáng</option>
+                        <option value="Ca chiều">Ca chiều</option>
+                        <option value="Ca đêm">Ca đêm</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Thứ 3</td>
+                <td>
+                    <select name="thu3_ca" required>
+                        <option value="Ca hành chính">Ca hành chính</option>
+                        <option value="Ca sáng">Ca sáng</option>
+                        <option value="Ca chiều">Ca chiều</option>
+                        <option value="Ca đêm">Ca đêm</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Thứ 4</td>
+                <td>
+                    <select name="thu4_ca" required>
+                        <option value="Ca hành chính">Ca hành chính</option>
+                        <option value="Ca sáng">Ca sáng</option>
+                        <option value="Ca chiều">Ca chiều</option>
+                        <option value="Ca đêm">Ca đêm</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Thứ 5</td>
+                <td>
+                    <select name="thu5_ca" required>
+                        <option value="Ca hành chính">Ca hành chính</option>
+                        <option value="Ca sáng">Ca sáng</option>
+                        <option value="Ca chiều">Ca chiều</option>
+                        <option value="Ca đêm">Ca đêm</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Thứ 6</td>
+                <td>
+                    <select name="thu6_ca" required>
+                        <option value="Ca hành chính">Ca hành chính</option>
+                        <option value="Ca sáng">Ca sáng</option>
+                        <option value="Ca chiều">Ca chiều</option>
+                        <option value="Ca đêm">Ca đêm</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Thứ 7 (lễ)</td>
+                <td>
+                    <select name="thu7_le_ca" required>
+                        <option value="Ca hành chính">Ca hành chính</option>
+                        <option value="Ca sáng">Ca sáng</option>
+                        <option value="Ca chiều">Ca chiều</option>
+                        <option value="Ca đêm">Ca đêm</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Thứ 7 (chiều)</td>
+                <td>
+                    <select name="thu7_chieu_ca" required>
+                        <option value="Ca hành chính">Ca hành chính</option>
+                        <option value="Ca sáng">Ca sáng</option>
+                        <option value="Ca chiều">Ca chiều</option>
+                        <option value="Ca đêm">Ca đêm</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Chủ Nhật</td>
+                <td>
+                    <select name="chunhat_ca" required>
+                        <option value="Nghỉ tuần">Nghỉ tuần</option>
+                        <option value="Ca sáng">Ca sáng</option>
+                        <option value="Ca chiều">Ca chiều</option>
+                        <option value="Ca đêm">Ca đêm</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <label for="start_date">Ngày bắt đầu:</label>
+    <input type="date" id="start_date" name="start_date" required><br><br>
+
+    <label for="end_date">Ngày kết thúc:</label>
+    <input type="date" id="end_date" name="end_date"><br><br>
+
+    <input type="submit" value="Gửi">
+</form>
+
+<script>
+    function toggleShiftTable() {
+        var shiftTable = document.getElementById("shiftTable");
+        // Kiểm tra trạng thái hiển thị và thay đổi nó
+        if (shiftTable.style.display === "none") {
+            shiftTable.style.display = "block"; // Hiện bảng ca
+        } else {
+            shiftTable.style.display = "none"; // Ẩn bảng ca
+        }
+    }
+</script>
+</body>
+</html>

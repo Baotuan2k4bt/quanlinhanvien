@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <title>admin</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="header">
+    <div class="search_header">
+        <input id="search" type="text" placeholder="Search for photo">
+    </div>
+    <div class="profile_header">
+        <div class="noti">
+            <i class="fa-regular fa-bell"></i>
+            <div class="dropdown noti-content">Notification Content</div>
+        </div>
+
+        <div class="chat">
+            <i class="fa-solid fa-comment"></i>
+            <div class="dropdown chat-content">Chat Content</div>
+        </div>
+
+        <div class="ava">
+            <i class="fa-solid fa-user"></i>
+            <div class="dropdown user-content">User Content</div>
+        </div>
+
+        <div class="more">
+            <i class="fa-solid fa-angle-down"></i>
+            <div class="dropdown more-content">Setting Content</div>
+        </div>
+
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+            <ul>
+                <li>Notification</li>
+                <li>Chats</li>
+                <li>Users</li>
+                <li>Setting</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<section class="admin">
+    <div class="row-grid">
+        <div class="admin-sidebar">
+            <div class="admin-sidebar-top">
+                <img src="https://cdn.vietnambiz.vn/2019/10/3/color-silhouette-cartoon-facade-shop-store-vector-14711058-1570007843495391141359-1570076859193969194096-15700769046292030065819-1570076927728377843390.png" width="50%" height="70" alt="Profile">
+            </div>
+            <div class="admin-sidebar-content">
+                <ul>
+                    <li class="search-box">
+                        <i class="ri-search-line "></i>
+                        <label>
+                            <input type="search" placeholder="Search...">
+                        </label>
+                    </li>
+                    <li><a href=""><i class="ri-dashboard-line"></i> Dashboard</a></li>
+                    <li><a href=""><i class="ri-group-fill"></i>Quản lí nhân sự<i class="ri-arrow-left-s-fill"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href=""><i class="ri-arrow-drop-right-fill"></i>Danh sách nhân viên</a></li>
+                            <li><a href=""><i class="ri-arrow-drop-right-fill"></i>Tạo danh sách nhân viên</a></li>
+                            <li><a href=""><i class="ri-arrow-drop-right-fill"></i>Tạo tài khoản nhân viên</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href=""><i class="ri-calendar-check-fill"></i> Thiết lập lịch làm việc<i class="ri-arrow-left-s-fill"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href=""><i class="ri-arrow-drop-right-fill"></i>Tạo danh sách đăng kí ca làm việc</a></li>
+                            <li><a href=""><i class="ri-arrow-drop-right-fill"></i>Danh sách ca làm việc</a></li>
+                            <li><a href=""><i class="ri-arrow-drop-right-fill"></i>Bảng chấm công làm việc</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><i class="ri-wallet-3-line"></i> Quản lí lương<i class="ri-arrow-left-s-fill"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href=""><i class="ri-arrow-drop-right-fill"></i>Bảng tính lương</a></li>
+                            <li><a href=""><i class="ri-arrow-drop-right-fill"></i>Danh sách bảng lương nhân viên</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><i class="ri-folder-chart-line"></i> Báo cáo & phân tích<i class="ri-arrow-left-s-fill"></i></a>
+
+                    </li>
+                    <li><a href=""><i class="ri-verified-badge-line"></i> Quản lí đơn từ<i class="ri-arrow-left-s-fill"></i></a>
+                    </li>
+                    <li><a href=""><i class="ri-star-line"></i> Khen thưởng & kỉ luật<i class="ri-arrow-left-s-fill"></i></a>
+
+                    <li><a href=""><i class="ri-user-star-line"></i> Tài khoản<i class="ri-arrow-left-s-fill"></i></a>
+                        <ul class="sub-menu">
+
+                            <li><a href=""><i class="ri-arrow-drop-right-fill"></i>Đăng xuất</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li class="mode">
+                        <div class="moon-sun">
+                            <i class="ri-sun-fill"></i>
+                            <i class="ri-moon-fill"></i>
+                        </div>
+                        <span class="mode-text text"> Dark Mode</span>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <div class="admin-content">
+
+        </div>
+    </div>
+</section>
+</body>
+<script src="admin.js"></script>
+</html>
